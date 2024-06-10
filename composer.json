@@ -1,0 +1,28 @@
+{
+  "name": "phily245/phpstan-testbench-reproduction",
+  "description": "Recreating a file include issue with phpstan and orchestra/testbench",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Phily245\\Foo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phily245\\Foo\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^11.0",
+    "illuminate/http": "^11.0",
+    "illuminate/auth": "^11.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0",
+    "larastan/larastan": "^2.9",
+    "phpstan/phpstan-mockery": "^1.1"
+  }
+}

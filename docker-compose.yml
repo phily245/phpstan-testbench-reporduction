@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+    volumes:
+      - './:/app'
+    networks:
+      - foobar
+networks:
+  foobar:
+    name: foobar

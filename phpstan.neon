@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/phpstan/phpstan-mockery/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    paths:
+        - ./
+
+    excludePaths:
+        analyseAndScan:
+            - .docker/*
+            - vendor/*
+            - storage/*
+            - bootstrap/cache/*
+
+    level: 9
