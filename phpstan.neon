@@ -8,10 +8,9 @@ parameters:
         - ./
 
     excludePaths:
-        analyseAndScan:
-            - .docker/*
-            - vendor/*
-            - storage/*
-            - bootstrap/cache/*
+        - .foo/*
+        - vendor/*
+        - storage/*
+        - bootstrap/cache/*
 
     level: 9
