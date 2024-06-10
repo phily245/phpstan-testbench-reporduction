@@ -9,6 +9,7 @@ orchestra/testbench creates a symliunk at `vendor/orchestra/testbench-core/larav
 1. Clone this repository
 2. Run `docker compose build --pull`
 3. Run `docker compose up -d`
+4. Run `docker compose exec app composer install`
 
 ## Reproduction of the issue
 
